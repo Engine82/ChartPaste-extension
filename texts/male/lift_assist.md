@@ -1,0 +1,1 @@
+Male pt, Lift assist
