@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "TEMSIS Paste",
+    "version": "1.0",
+
+    "description": "Choose from a number of pre-set texts to paste into the narrative section of TEMSIS for quicker report writing.",
+    "homepage_url": "https://github.com/Engine82/TEMSIS_paste_extension",
+    "icons": {
+        "48": "icons/pencil-48.png",
+        "96": "icons/pencil-96.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "19": "icons/pencil-19.png"
+        }
+    }
+}
