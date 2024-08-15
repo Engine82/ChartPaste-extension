@@ -1,0 +1,24 @@
+html,
+body {
+    width: 206px;
+    background-color: #ededed;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    border: none;
+    width: 100%;
+    margin: 3% auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 1.25em;
+    cursor: pointer;
+    background-color: #a5e4fc;
+}
+
+button:hover {
+    background-color: #5bcefa;
+}
