@@ -14,5 +14,19 @@
         "default_icon": {
             "19": "icons/pencil-19.png"
         }
-    }
+    },
+    "background": {
+        "scripts": ["background/background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.nhesr.org/*"],
+            "js": ["content_script.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["/texts/*"]
+        }
+    ]
 }
