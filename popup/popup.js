@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // add event listner to each button ->
         new_button.addEventListener('click', () =>  {
             // let message = new_button.innerText;
-            const message = files[i]["title"];
-            console.log(`Button clicked: ${message}`)
-            chrome.runtime.sendMessage({ action: "logMessage", message: message});
+            const file_name = files[i]["file_name"];
+            console.log(`Button clicked: ${file_name}`)
+            chrome.runtime.sendMessage({ action: "logMessage", message: file_name});
         });
     // TODO: when a button is clicked, tell background.js to read the corresponding file content
 
