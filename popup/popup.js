@@ -1,7 +1,7 @@
-// TODO: generate buttons based on read file names (start with hard-coded file names; can read then later)
-// create list of files
+// Access texts.json and generate buttons in popup
 document.addEventListener("DOMContentLoaded", function () {
 
+    // Acces the .json data
     function getTextInfo() {
         const textUrl = chrome.runtime.getURL('data/texts.json');
 
@@ -14,14 +14,16 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     }
 
+    // render popup buttons using "title" from .json
     function renderPopup() {
+        
+        // Fetch .json data
         getTextInfo()
             .then(files => {
                 console.log("Files retieved:", files)
-                // if "files" was a dictionary: console.log(Object.keys(files).length)
-                const column = document.getElementById("buttons");
 
                 // clear any existing buttons
+                const column = document.getElementById("buttons");
                 column.innerHTML = '';
 
                 // create button coresponding to each file
@@ -36,11 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         chrome.runtime.sendMessage({ action: "logMessage", message: fileText});
                     });
 
-                    // place button on page
+                    // Place button on page
                     column.appendChild(newButton);
                 });
             })
-                // TODO: when a button is clicked, tell background.js to read the corresponding file content
+
+            // Display and log error if unsuccessful at fetching .json data
             .catch(error => {
                 const column = document.getElementById("buttons");
                 errorMessage = document.createElement("h4");
@@ -50,5 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     }
 
+    // Function call to render popup buttons
     renderPopup();  
 });
