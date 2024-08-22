@@ -32,7 +32,7 @@
     "web_accessible_resources": [
         {
             "matches": ["https://www.nhesr.org/*"],
-            "resources": ["/texts/*"]
+            "resources": ["/data/*"]
         }
     ]
 }
