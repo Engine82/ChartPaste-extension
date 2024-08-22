@@ -21,8 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // let message = new_button.innerText;
             const message = files[i]["title"];
             console.log(`Button clicked: ${message}`)
-
-            chrome.runtime.sendMessage({ action: "showAlert", message: message});
+            chrome.tabs.query({ active: true, currentWindow: true}, (tabs) => {
+                chrome.tabs.sendMessage(tabs[0].id, { action: "showAlert", message: message});
+            })
         });
     // TODO: when a button is clicked, tell background.js to read the corresponding file content
 
