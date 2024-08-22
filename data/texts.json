@@ -1,0 +1,28 @@
+{
+    "texts": [
+        {
+            "id": 0,
+            "title": "Medical Tx",
+            "category": "Male",
+            "text": "Dispatched for a ____ y/o M, ________."
+        },
+        {
+            "id": 1,
+            "title": "Medical Tx",
+            "category": "Female",
+            "text": "Dispatched for a ____ y/o F, ________."
+        },
+        {
+            "id": 2,
+            "title": "Lift Assist",
+            "category": "Male",
+            "text": "Dispatched for a ____ y/o M, ________."
+        },
+        {
+            "id": 3,
+            "title": "Lift Assist",
+            "category": "Female",
+            "text": "Dispatched for a ____ y/o F, ________."
+        }
+    ]
+}
