@@ -3,7 +3,9 @@
     "name": "TEMSIS Paste",
     "version": "1.0",
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "tabs",
+        "scripting"
     ],
     "description": "Choose from a number of pre-set texts to paste into the narrative section of TEMSIS for quicker report writing.",
     "homepage_url": "https://github.com/Engine82/TEMSIS_paste_extension",
@@ -24,7 +26,7 @@
         {
             "matches": ["<all_urls>"],
             // "matches": ["https://www.nhesr.org/*"],
-            "js": ["content_script.js"]
+            "js": ["content.js"]
         }
     ],
     "web_accessible_resources": [
