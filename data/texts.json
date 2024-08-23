@@ -3,24 +3,24 @@
         "id": 0,
         "title": "Medical Tx",
         "category": "Male",
-        "text": "Dispatched for a ____ y/o M, ________."
+        "text": "Dispatched for a ____ y/o M, MEDICAL TX."
     },
     {
         "id": 1,
         "title": "Medical Tx",
         "category": "Female",
-        "text": "Dispatched for a ____ y/o F, ________."
+        "text": "Dispatched for a ____ y/o F, MEDICAL TX."
     },
     {
         "id": 2,
         "title": "Lift Assist",
         "category": "Male",
-        "text": "Dispatched for a ____ y/o M, ________."
+        "text": "Dispatched for a ____ y/o M, LIFT ASSIST."
     },
     {
         "id": 3,
         "title": "Lift Assist",
         "category": "Female",
-        "text": "Dispatched for a ____ y/o F, ________."
+        "text": "Dispatched for a ____ y/o F, LIFT ASSIST."
     }
 ]
