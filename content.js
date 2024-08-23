@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         const pasteArea = document.getElementById("135338");
 
         if (pasteArea) {
-            pasteArea.innerText = message.message;
+            pasteArea.value += message.message;
         } else {
             console.error("Element with ID 135338 not found");
         }
