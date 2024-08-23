@@ -24,14 +24,15 @@
     },
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
             // "matches": ["https://www.nhesr.org/*"],
+            "matches": ["<all_urls>"],
             "js": ["content.js"]
         }
     ],
     "web_accessible_resources": [
         {
-            "matches": ["https://www.nhesr.org/*"],
+            // "matches": ["https://www.nhesr.org/*"],
+            "matches": ["<all_urls>"],
             "resources": ["/data/*"]
         }
     ]
