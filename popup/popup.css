@@ -1,7 +1,7 @@
 html,
 body {
     width: 606px;
-    background-color: #ededed;
+    background-color: #f9f9f9;
 }
 
 .hidden {
@@ -16,9 +16,11 @@ button {
     text-align: center;
     font-size: 1.25em;
     cursor: pointer;
-    background-color: #a5e4fc;
+    background-color: #dfdfdf;
+    /* background-color: #a5e4fc; */
 }
 
 button:hover {
-    background-color: #5bcefa;
+    background-color: #c6c6c6;
+    /* background-color: #5bcefa; */
 }
