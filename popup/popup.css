@@ -20,10 +20,10 @@ button {
     /* background-color: #a5e4fc; */
 }
 
-button:hover {
+/* button:hover {
     background-color: #c6c6c6;
-    /* background-color: #5bcefa; */
-}
+    background-color: #5bcefa;
+} */
 
 #popup-content {
     display: flex;
@@ -33,4 +33,20 @@ button:hover {
 
 #buttons {
     display: flex;
+}
+
+button.column1 {
+    background-color: #a5e4fc;
+}
+
+button.column1:hover {
+    background-color: #5bcffb;
+}
+
+.column2 {
+    background-color: #fad7de;
+}
+
+.column2:hover {
+    background-color: #f5abb9;
 }
