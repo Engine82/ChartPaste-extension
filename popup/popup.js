@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     // Assign button color
                     if (file.category === "Male") {
-                        newButton.style.backgroundColor = "#a5e4fc";
+                        newButton.classList.add("column1");
                     } else if (file.category === "Female") {
-                        newButton.style.backgroundColor = "#fad7de";
+                        newButton.classList.add("column2");
                     }
                 });
             })
