@@ -23,8 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("Files retieved:", files)
 
                 // clear any existing buttons
-                const column = document.getElementById("buttons");
-                column.innerHTML = '';
+                const column1 = document.getElementById("column1");
+                const column2 = document.getElementById("column2");
+
+                column1.innerHTML = '';
+                column2.innerHTML = '';
 
                 // create button coresponding to each file
                 files.forEach(file => {
@@ -39,7 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     });
 
                     // Place button on page
-                    column.appendChild(newButton);
+                    if (file.category === "Male") {
+                        column1.appendChild(newButton);
+                    } else if (file.category === "Female") {
+                        column2.appendChild(newButton);
+                    }
 
                     // Assign button color
                     if (file.category === "Male") {
