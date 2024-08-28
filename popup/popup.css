@@ -16,14 +16,14 @@ button {
     text-align: center;
     font-size: 1.25em;
     cursor: pointer;
+    /* Base color, changed by class */
     background-color: #dfdfdf;
-    /* background-color: #a5e4fc; */
 }
 
-/* button:hover {
+/* Base button colors */
+button:hover {
     background-color: #c6c6c6;
-    background-color: #5bcefa;
-} */
+}
 
 #popup-content {
     display: flex;
@@ -35,6 +35,8 @@ button {
     display: flex;
 }
 
+
+/* Male colors */
 button.column1 {
     background-color: #a5e4fc;
 }
@@ -43,6 +45,7 @@ button.column1:hover {
     background-color: #5bcffb;
 }
 
+/* Female colors */
 .column2 {
     background-color: #fad7de;
 }
