@@ -1,6 +1,16 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+
 html,
 body {
-    width: 366px;
+    width: auto;
     background-color: #f9f9f9;
 }
 
@@ -10,11 +20,14 @@ body {
 
 button {
     border: none;
-    width: 96%;
+    width: 166px;
     margin: 4px;
     padding: 4px;
     text-align: center;
+    font-family: arial;
     font-size: 1.25em;
+    font-weight: 400;
+    color: black;
     cursor: pointer;
     /* Base color, changed by class */
     background-color: #dfdfdf;
@@ -52,4 +65,15 @@ button.column1:hover {
 
 .column2:hover {
     background-color: #f5abb9;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: arial;
+    color: #666666;
+
+    margin: 4px auto;
 }
