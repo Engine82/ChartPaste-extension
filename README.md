@@ -1,2 +1,16 @@
 # TEMSIS_paste_extension
-Paste reports into TEMSIS
+
+## Contents
+
+- Introduction
+- Demo
+- Features
+- Installation
+- Usage
+- Permissions
+- Contributing
+- Support
+- License
+
+## Introduction
+
