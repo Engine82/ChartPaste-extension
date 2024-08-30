@@ -1,5 +1,5 @@
 # ChartPaste chrome extension
-![GitHub Release](https://img.shields.io/github/v/release/engine82/ChartPaste-extension)
+![GitHub Release](https://img.shields.io/github/v/release/Engine82/ChartPaste-extension)
 
 ## Contents
 
