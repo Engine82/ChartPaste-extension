@@ -1,4 +1,5 @@
 # TEMSIS_paste_extension
+![GitHub Release](https://img.shields.io/github/v/release/engine82/ChartPaste-extension)
 
 ## Contents
 
