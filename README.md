@@ -19,7 +19,7 @@
 Paramedics and EMTs are required to write reports after responding to emergnecy calls, the format of which is largeley repetitive and standardized. Within this format, much of the text is the same between reports as well. This browser extension simplifies EMS report writing by allowing the user to paste 80% of their report at the click of a button, leaving only the unique parts pertaining to that specific call left to be written.
 
 ## Demo
-<insert youtube link here>
+[![Watch the video](https://img.youtube.com/vi/n1Y346VcIlU/hqdefault.jpg)](https://youtu.be/n1Y346VcIlU)
 
 ## Features
 - Easily insert predefinted text blocks
