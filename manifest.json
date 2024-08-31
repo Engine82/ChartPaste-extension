@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "TEMSIS Paste",
+    "name": "Chart Paste",
     "version": "1.0",
     "permissions": [
         "activeTab",
