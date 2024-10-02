@@ -36,7 +36,7 @@ Paramedics and EMTs are required to write reports after responding to emergnecy 
 Note: The narrative text is inserted using the ID of the textarea field in the NHESR medical report form. To alter this for use elsewhere, change the element ID in the content script to the id of the element where you want the text to be inserted.
 
 ## Usage
-1. In NHESR/Elite, open a new ior existing EMS incident form.
+1. In NHESR/Elite, open a new or existing EMS incident form.
 2. Navigate to the narrative section of the form.
 3. Click the pencil icon in your browser toolbar.
 4. Select a report template to insert into the webpage. Buttons are color coded by gender pronouns.
