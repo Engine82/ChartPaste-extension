@@ -12,9 +12,16 @@ if(!isListenerAttached) {
             console.log(`Content Script:  ${message.message}`);
 
             // Insert text into narrative textarea element
+            function sanitize(input) {
+                const div = document.createElement('div');
+                div.textContent = input;
+                return div.textContent;
+            }
+
             const pasteArea = document.getElementById("135338");
             if (pasteArea) {
-                pasteArea.value += message.message;
+                const sanitizedMessage = sanitize(message.message);
+                pasteArea.textContent += sanitizedMessage;
             } else {
                 console.error("Element with ID 135338 not found");
             }
