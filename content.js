@@ -18,12 +18,12 @@ if(!isListenerAttached) {
                 return div.textContent;
             }
 
-            const pasteArea = document.getElementById("135338");
+            const pasteArea = document.querySelector('textarea[name="narrative"]');
             if (pasteArea) {
                 const sanitizedMessage = sanitize(message.message);
                 pasteArea.textContent += sanitizedMessage;
             } else {
-                console.error("Element with ID 135338 not found");
+                console.error("Target textarea not found");
             }
         }
     });
