@@ -8,7 +8,7 @@ if(!isListenerAttached) {
 
     // Listen for message from background script
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-        if (message.action === "logMessage") {
+        if (sender.id === chrome.runtime.id && message.action === "logMessage") {
             console.log(`Content Script:  ${message.message}`);
 
             // Insert text into narrative textarea element
@@ -25,6 +25,8 @@ if(!isListenerAttached) {
             } else {
                 console.error("Target textarea not found");
             }
+        } else {
+            console.warn("Recieved message from untrusted source or invalid action");
         }
     });
 
