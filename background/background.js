@@ -1,6 +1,11 @@
 // TODO: listen for messages from the popup script
+const DEBUG_MODE = false;
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    console.log("Message recieved in background script:", message);
+    if (DEBUG_MODE) {
+        console.log("Message recieved in background script:", message);
+    }
+    
     if (message.action === "logMessage") {
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
 

@@ -1,5 +1,8 @@
 // Listen for text from background script and insert it into the proper textarea
-console.log("content script loaded")
+const DEBUG_MODE = false;
+if (DEBUG_MODE) {
+    console.log("content script loaded");
+}
 
 // Flag to prevent multiple event listener assigments
 let isListenerAttached = false;
@@ -9,7 +12,9 @@ if(!isListenerAttached) {
     // Listen for message from background script
     chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (sender.id === chrome.runtime.id && message.action === "logMessage") {
-            console.log(`Content Script:  ${message.message}`);
+            if (DEBUG_MODE) {
+                console.log(`Content Script:  ${message.message}`);
+            }
 
             // Insert text into narrative textarea element
             function sanitize(input) {

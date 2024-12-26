@@ -1,4 +1,5 @@
 // Access texts.json and generate buttons in popup
+const DEBUG_MODE = false;
 document.addEventListener("DOMContentLoaded", function () {
 
     // Acces the .json data
@@ -20,7 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Fetch .json data
         getTextInfo()
             .then(files => {
-                console.log("Files retieved:", files)
+                if (DEBUG_MODE) {
+                    console.log("Files retieved:", files);
+                }
 
                 // clear any existing buttons
                 const column1 = document.getElementById("column1");
@@ -37,7 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     // add event listner to each button ->
                     newButton.addEventListener('click', () =>  {
                         const fileText = file.text;
-                        console.log(`Text: ${fileText}}`)
+
+                        if (DEBUG_MODE) {
+                            console.log(`Text: ${fileText}}`);
+                        }
+
                         chrome.runtime.sendMessage({ action: "logMessage", message: fileText});
                     });
 
@@ -63,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 errorMessage = document.createElement("h4");
                 errorMessage.innerText = "Error loading text data";
                 column.appendChild(errorMessage);
-                console.error('Error fetching texts.json', error)
+                console.error('Error fetching text data', error);
             });
     }
 
